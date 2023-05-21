@@ -1,8 +1,8 @@
 # Simple testfile! Change this file to test automation on GitHub
 
-def test_main():
-    # test success
-    assert 1 == 1
+import main
 
-    # test failure
-    # assert 1 == 0
+
+def test_power():
+    assert main.power(2, 2) == 4
+    assert main.power(2, 3) == 8
