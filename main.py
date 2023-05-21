@@ -15,3 +15,7 @@ def index():
 @app.route('/cow')
 def cow():
     return 'MOoooOo!'
+
+@app.route('/feyenoord')
+def cow():
+    return 'WIJ ZIJN KAMPIOEN! WIJ ZIJN KAMPIOEN!'
