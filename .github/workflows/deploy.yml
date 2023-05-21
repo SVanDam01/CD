@@ -29,4 +29,4 @@ jobs:
            username: ${{ secrets.SERVER_USERNAME }}
            key: ${{ secrets.SERVER_KEY }}
            port: 22
-           script: sh cd /home/farm/deploying.sh
+           script: cd /home/farm/deploying.sh
