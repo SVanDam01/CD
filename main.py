@@ -17,5 +17,5 @@ def cow():
     return 'MOoooOo!'
 
 @app.route('/feyenoord')
-def cow():
+def club():
     return 'WIJ ZIJN KAMPIOEN! WIJ ZIJN KAMPIOEN!'
