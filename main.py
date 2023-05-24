@@ -9,13 +9,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello, world!'
+    return 'Supporters songs!'
 
 
-@app.route('/cow')
-def cow():
-    return 'MOoooOo!'
+@app.route('/psv')
+def psv():
+    return 'Boerruhhhh!'
 
 @app.route('/feyenoord')
-def club():
+def feyenoord():
     return 'WIJ ZIJN KAMPIOEN! WIJ ZIJN KAMPIOEN!'
