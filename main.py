@@ -1,5 +1,5 @@
 # Import what we need from flask
-from flask import Flask
+from flask import Flask, render_template
 
 # Create a Flask app inside `app`
 app = Flask(__name__)
@@ -9,13 +9,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Supporters songs!'
+    return render_template("index.html", title="Dutch football fan songs")
 
+@app.route('/feyenoord')
+def feyenoord():
+    return 'WIJ ZIJN KAMPIOEN! WIJ ZIJN KAMPIOEN!'
 
 @app.route('/psv')
 def psv():
     return 'Boerruhhhh!'
 
-@app.route('/feyenoord')
-def feyenoord():
-    return 'WIJ ZIJN KAMPIOEN! WIJ ZIJN KAMPIOEN!'
+@app.route('/ajax')
+def ajax():
+    return 'Daar horen ze engelen zingen.... (helemaal niets in Amsterdam!)'

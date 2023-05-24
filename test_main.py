@@ -1,6 +1,6 @@
-# Simple testfile! Change this file to test automation on GitHub
+# Simple test before deploying. Test succes is by default applied.
 
-def test_dummy():
+def test_changes():
     # test success
     assert 1 == 1
 
